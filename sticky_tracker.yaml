@@ -1,0 +1,19 @@
+# BoT-SORT Professional "Sticky" Config
+tracker_type: botsort
+track_high_thresh: 0.25
+track_low_thresh: 0.1
+new_track_thresh: 0.3
+track_buffer: 120        # 4-second memory
+
+# Stability Settings
+match_thresh: 0.5        # Handles Zoom/Rotation
+proximity_thresh: 0.6    # Trusts location
+
+# Required Technical Settings (Prevents Crashes)
+gmc_method: sparseOptFlow
+fuse_score: True         # <--- THIS WAS MISSING. It fixes the crash.
+
+# Visual Brain (Re-ID)
+appearance_thresh: 0.6   # Forgiving on lighting
+with_reid: True
+model: yolo11n-cls.pt

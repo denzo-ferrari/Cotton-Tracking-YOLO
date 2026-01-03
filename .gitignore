@@ -1,0 +1,29 @@
+# --- Python & System Junk ---
+__pycache__/
+*.py[cod]
+.DS_Store
+.vscode/
+
+# --- Virtual Environment (NEVER UPLOAD THIS) ---
+venv/
+env/
+.env
+
+# --- YOLO Specifics ---
+# Ignore training runs (too many files) unless you really want them
+runs/
+
+# --- Large Files ---
+# Ignore large video files or datasets
+*.mp4
+*.avi
+datasets/
+
+# --- Weights ---
+# Keep your custom model, but ignore downloaded base models
+yolov8*.pt
+yolo11*.pt
+osnet*.pt
+
+# Keep this one (your custom brain)
+!best.pt

@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['cotton_boll', 'cotton_boll-cluster']
+
+roboflow:
+  workspace: deniz-drin5
+  project: cotton-boll-and-cluster
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/deniz-drin5/cotton-boll-and-cluster/dataset/2
